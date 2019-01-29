@@ -13,4 +13,7 @@ do
   esac
 done
 cat cd_tray_image
+if [[ $OSTYPE == darwin ]]; then
+  #statements
+fi
 eject
