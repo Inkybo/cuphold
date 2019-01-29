@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-while getopts ":cdl" option;
+while getopts ":cdlp" option;
 do
   case $option in
     c)
@@ -10,10 +10,16 @@ do
     cat tutor
     exit 0
     ;;
+    p)
+    cat pet
+    exit 0
+    ;;
   esac
 done
 cat cd_tray_image
-if [[ $OSTYPE == darwin ]]; then
-  #statements
+if [ "$(uname -s)" == "Darwin"];
+  then
+    drutil eject
+else
+    eject
 fi
-eject
