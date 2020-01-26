@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-while getopts ":cdlp" option;
+while getopts ":cdlpq" option;
 do
   case $option in
     c)
@@ -13,6 +13,9 @@ do
     p)
     cat pet
     exit 0
+    ;;
+    q)
+    eject
     ;;
   esac
 done

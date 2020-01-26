@@ -1,5 +1,3 @@
 #ignored directories
 /DEBIAN/*
-tutor
-carl
-pet
+.DS_Store
